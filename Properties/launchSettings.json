@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "MotivationTestApp (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "MotivationTestApp (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

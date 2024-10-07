@@ -1,0 +1,49 @@
+<Window
+    x:Class="MotivationTestApp.DashBoard"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="DashBoard">
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="White" Offset="0.0"/>
+                <GradientStop Color="Pink" Offset="0.5"/>
+                <GradientStop Color="Cyan" Offset="1.0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="30">
+
+            <Image Source="Assets/image1.png" Width="200" Height="200" HorizontalAlignment="Center" />
+
+            <TextBlock Text="Ready for Motivation ?"
+                       FontSize="24"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center"/>
+
+            <StackPanel HorizontalAlignment="Center" Spacing="20">
+                <Button Content="Random Quotes"
+                        Background="#4A90E2"
+                        Foreground="White"
+                        Width="150"
+                        Height="40"
+                        Click="RandomQuotesButton_Click"/>
+
+                <Button Content="Quotes Test"
+                        Background="#4A90E2"
+                        Foreground="White"
+                        Width="150"
+                        Height="40"
+                        Click="QuotesTestButton_Click"/>
+
+                <Button Content="Log Out"
+                        Background="#4A90E2"
+                        Foreground="White"
+                        Width="150"
+                        Height="40"
+                        Click="LogoutButton_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

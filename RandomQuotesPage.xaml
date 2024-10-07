@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="MotivationTestApp.RandomQuotesPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MotivationTestApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Random Quotes"
+    >
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="Cyan" Offset="0.0"/>
+                <GradientStop Color="Pink" Offset="0.5"/>
+                <GradientStop Color="White" Offset="1.0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="20">
+
+            <TextBlock Text="Random Motivation Quotes"
+                       FontSize="36"
+                       FontWeight="Bold"
+                       Foreground="BlueViolet"
+                       HorizontalAlignment="Center"
+                       Margin="0,20,0,0"
+                       TextAlignment="Center"/>
+
+            <Border CornerRadius="15"
+                    Padding="10"
+                    Width="500" Height="300"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+                <Image x:Name="DisplayedImage"
+                       Stretch="Uniform"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Width="480" Height="280"
+                />
+            </Border>
+
+            <Button Content="Next Quotes"
+                    Click="RandomButton_Click"
+                    Background="#4A90E2"
+                    Foreground="White"
+                    Padding="10,5"
+                    CornerRadius="10"
+                    Width="200"
+                    Height="40"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Bottom"
+                    Margin="0,0,0,0">
+            </Button>
+
+            <Button Content="Return Dashboard"
+                    Click="ReturnDashBoard_Click"
+                    Background="#4A90E2"
+                    Foreground="White"
+                    Padding="10,5"
+                    CornerRadius="10"
+                    Width="200"
+                    Height="40"
+                    HorizontalAlignment="Center"
+                    Margin="0,0,0,0">
+            </Button>
+
+        </StackPanel>
+    </Grid>
+</Window>
